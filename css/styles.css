@@ -133,8 +133,7 @@ a {
   letter-spacing: 0.02em;
   padding-top: 24px;
   padding-bottom: 24px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms ease;
+  transition: cubic-bezier(0.42, 0, 0.58, 1), color 0.5s ease;
 }
 
 .nav-link.studio,
@@ -156,13 +155,10 @@ a {
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  transition: background-color 0.5s cubic-bezier(0.42, 0, 0.58, 1),
-    color 0.5s ease;
+  transition: cubic-bezier(0.42, 0, 0.58, 1), color 0.5s ease;
 }
 
-.nav-link:hover {
-  color: var(--color-brand);
-}
+.nav-link:hover,
 .nav-link:focus {
   color: var(--color-brand);
 }
@@ -218,8 +214,7 @@ a {
   border: none;
   cursor: pointer;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms ease;
+  transition: background-color 250ms;
 }
 
 .head-button-home:hover {
@@ -232,11 +227,11 @@ a {
   border: 1px solid var(--color-button);
   border-radius: 4px;
   padding: 12px 24px;
+  cursor: pointer;
   box-shadow: 0px 1px 6px rgba(46 47 66 / 8%), 0px 1px 1px rgba(46 47 66 / 16%),
     0px 2px 1px rgba(46 47 66 / 8%);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms ease;
+  transition: background-color 250ms, color 250ms ease;
 }
 
 .head-flex {
@@ -252,8 +247,6 @@ a {
   color: var(--color-primary);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 /* FUTURES */
@@ -401,10 +394,6 @@ a {
     0px 2px 1px rgba(46 47 66 / 8%);
 }
 
-.gallery li {
-  flex-basis: calc((100% - 48px) / 3);
-}
-
 .overlay {
   position: absolute;
   color: #f4f4fd;
@@ -432,8 +421,8 @@ a {
   overflow: hidden;
 }
 
-.team-list-img-wrapper:hover .overlay,
-.team-list-img-wrapper:focus .overlay {
+.gallery-cards:hover .overlay,
+.gallery-cards:focus .overlay {
   transform: translate(0, 0);
 }
 
@@ -478,11 +467,11 @@ a {
   background-color: #4d5ae5;
   border-radius: 50%;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms ease;
+  transition: background-color 250ms;
 }
 
-.socials-link:hover {
+.socials-link:hover,
+.socials-link:focus {
   fill: var(--color-button);
   background-color: #404bbf;
 }
@@ -526,7 +515,6 @@ a {
 .customers-link:focus {
   fill: #404bbf;
   border-color: #404bbf;
-  cursor: pointer;
 }
 
 .customers {
@@ -550,8 +538,7 @@ a {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms ease;
+  transition: background-color 250ms;
 }
 
 .footer-link-svg:hover,
@@ -581,8 +568,8 @@ a {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms ease;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
