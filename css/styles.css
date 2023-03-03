@@ -228,8 +228,6 @@ a {
   border-radius: 4px;
   padding: 12px 24px;
   cursor: pointer;
-  box-shadow: 0px 1px 6px rgba(46 47 66 / 8%), 0px 1px 1px rgba(46 47 66 / 16%),
-    0px 2px 1px rgba(46 47 66 / 8%);
 
   transition: background-color 250ms, color 250ms ease;
 }
@@ -386,6 +384,10 @@ a {
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
+}
+
+.gallery-cards {
+  transition: box-shadow 250ms ease;
 }
 
 .gallery-cards:hover {
